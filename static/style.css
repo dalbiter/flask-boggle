@@ -1,0 +1,32 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size:3rem;    
+}
+
+#boggle {
+    background-color: bisque;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+}
+
+.board {
+    display: grid;
+    width: max-content;
+    margin: 48px auto;
+    cursor: pointer
+}
+
+#letter {
+    font-size: 3rem;
+    padding: 5px;
+    border: 3px solid black;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
