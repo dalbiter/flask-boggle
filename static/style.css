@@ -5,7 +5,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-size:3rem;    
+    font-size:5rem;    
 }
 
 #boggle {
@@ -29,4 +29,9 @@ h1 {
     text-align: center;
     height: 50px;
     width: 50px;
+}
+
+.form_container {
+    width: max-content;
+    margin: auto;
 }

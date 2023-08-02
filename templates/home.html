@@ -27,8 +27,19 @@
         </table>
 
     </section>
+
+    <div class="form_container">
+        <form method="GET" class="new-word">
+            <input name="word" class="'word">
+            <button>Submit</button>
+        </form>
+    </div>
+    <p class="msg"></p>
+
     <script src="http://unpkg.com/jquery"></script>
     <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
     <script src="/static/app.js"></script>
+    <!-- the script below is added to create the new boggle game in the DOM -->
+    <script> let game = new BoggleGame("boggle")</script>
 </body>
 </html>
