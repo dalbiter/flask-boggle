@@ -61,9 +61,8 @@ class BoggleGame {
             this.score += word.length;
             this.showScore(); 
             this.words.add(word);
-            console.log(this.words)
             this.showMessage(`Added: ${word}`, 'ok');
-            this.showWord();
+            this.showWord(word);
         }
     }
 

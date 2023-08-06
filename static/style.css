@@ -35,3 +35,31 @@ h1 {
     width: max-content;
     margin: auto;
 }
+
+.msg {
+    font-size: 1.25rem;
+}
+
+.err {
+    background-color: rgba(193, 4, 4, .25);
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+}
+
+.ok {
+    background-color: rgba(5, 190, 5, .25);
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+}
+
+.stats {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.words {
+    font-size: 1.25rem;
+}
