@@ -9,13 +9,13 @@ h1 {
 }
 
 #boggle {
-    background-color: bisque;
     align-items: center;
     width: max-content;
     margin: auto;
 }
 
 .board {
+    background-color: bisque;
     display: grid;
     width: max-content;
     margin: 48px auto;
