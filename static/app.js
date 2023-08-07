@@ -31,6 +31,12 @@ class BoggleGame {
     showWord(word) {
         $(".words", this.board).append($("<li>", { text: word }));
       }
+    // reset input upon submission of guess  
+    clearInput() {
+        const $input = $('input', this.board)
+        $input.val('')
+        $input.focus();
+    }
 
     // Handle submission of a word
 
@@ -64,6 +70,7 @@ class BoggleGame {
             this.showMessage(`Added: ${word}`, 'ok');
             this.showWord(word);
         }
+        this.clearInput();
     }
 
     showTimer() {
@@ -82,8 +89,7 @@ class BoggleGame {
 
     async scoreGame() {
         $('.new-word', this.board).hide();
-        const resp = await axios.post('/score-game', { score: this.score });
-        console.log(resp.data.brokeRecord) 
+        const resp = await axios.post('/score-game', { score: this.score }); 
         if(resp.data.brokeRecord){
             this.showMessage(`New Record: ${this.score}`, 'ok')
         } else {
